@@ -1,0 +1,32 @@
+/* Fuente */
+body {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+/* Colores */
+body {
+    color: gray;
+    background-color: rgb(255, 249, 240);
+}
+
+h1 {
+    color: black;
+}
+
+/* Estilo */
+body {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    text-align: center;
+}
