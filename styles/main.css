@@ -12,21 +12,36 @@ h1 {
 
 /* Colores */
 body {
-    color: gray;
-    background-color: rgb(255, 249, 240);
+  color: gray;
+  background-color: white
+}
+
+header {
+  background-color: peachpuff;
 }
 
 h1 {
-    color: black;
+  color: black;
 }
 
 /* Estilo */
 body {
-    width: 75%;
-    margin-left: auto;
-    margin-right: auto;
+  margin: 0;
+}
+
+body > header {
+  margin: 0;
+  padding: 2%;
+  border-bottom: 1px solid orangered;
 }
 
 h1 {
-    text-align: center;
+  margin-top: 0;
+  text-align: center;
+}
+
+div.space {
+  width: 65%;
+  margin-left: auto;
+  margin-right: auto;
 }
