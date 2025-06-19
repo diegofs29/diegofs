@@ -1,46 +1,44 @@
 RSpec.describe "Tech stack", type: :feature, js: true do
     context "when reading Languages" do
-        it "the title should read Lenguajes" do 
+        it "the title should read Languages" do 
             visit '/'
-            expect(find('#lang').text).to eq('Lenguajes')
+            expect(find('#lang').text).to eq('Languages')
         end
         it "should have Kotlin" do
             visit '/'
-            expect(find('#lang-top').text).to include("Kotlin")
+            expect(find('#lang-content').text).to include("Kotlin")
         end
         it "should have Swift" do
             visit '/'
-            expect(find('#lang-top').text).to include("Swift")
+            expect(find('#lang-content').text).to include("Swift")
         end
         it "should have Python" do
             visit '/'
-            expect(find('#lang-top').text).to include("Python")
+            expect(find('#lang-content').text).to include("Python")
         end
         it "should have Java" do
             visit '/'
-            expect(find('#lang-center').text).to include("Java")
+            expect(find('#lang-content').text).to include("Java")
         end
         it "should have Bash" do
             visit '/'
-            expect(find('#lang-center').text).to include("Bash")
+            expect(find('#lang-content').text).to include("Bash")
         end
         it "should have JavaScript" do
             visit '/'
-            expect(find('#lang-center').text).to include("JavaScript")
+            expect(find('#lang-content').text).to include("JavaScript")
         end
         it "should have C++" do
             visit '/'
-            expect(find('#lang-bottom').text).to include("C++")
+            expect(find('#lang-content').text).to include("C++")
         end
         it "should have C#" do
             visit '/'
-            expect(find('#lang-bottom').text).to include("C#")
+            expect(find('#lang-content').text).to include("C#")
         end
         it "should be sepparated by commas" do
             visit '/'
-            expect(find('#lang-top').text).to eq("Kotlin, Swift, Python")
-            expect(find('#lang-center').text).to eq("Java, Bash, JavaScript")
-            expect(find('#lang-bottom').text).to eq("C++, C#")
+            expect(find('#lang-content').text).to eq("Kotlin, Swift, Python, Java, Bash, JavaScript, C++, C#")
         end
     end
     
@@ -67,35 +65,34 @@ RSpec.describe "Tech stack", type: :feature, js: true do
         end
     end
     
-    context "when reading Infraestructura" do
-        it "title should read Infraestructura" do 
+    context "when reading Infraestructure" do
+        it "title should read Infraestructure" do 
             visit '/'
-            expect(find('#infraestructure').text).to eq('Infraestructura')
+            expect(find('#infraestructure').text).to eq('Infraestructure')
         end
         it "should have Docker" do 
             visit '/'
-            expect(find('#infraestructure-top').text).to include('Docker')
+            expect(find('#infraestructure-content').text).to include('Docker')
         end
         it "should have Kubernetes" do 
             visit '/'
-            expect(find('#infraestructure-top').text).to include('Kubernetes')
+            expect(find('#infraestructure-content').text).to include('Kubernetes')
         end
         it "should have Ansible" do 
             visit '/'
-            expect(find('#infraestructure-bottom').text).to include('Ansible')
+            expect(find('#infraestructure-content').text).to include('Ansible')
         end
         it "should have Puppet" do 
             visit '/'
-            expect(find('#infraestructure-bottom').text).to include('Puppet')
+            expect(find('#infraestructure-content').text).to include('Puppet')
         end
         it "should have Terraform" do 
             visit '/'
-            expect(find('#infraestructure-bottom').text).to include('Terraform')
+            expect(find('#infraestructure-content').text).to include('Terraform')
         end
         it "should be sepparated by commas" do
             visit '/'
-            expect(find('#infraestructure-top').text).to eq("Docker, Kubernetes")
-            expect(find('#infraestructure-bottom').text).to eq("Ansible, Puppet, Terraform")
+            expect(find('#infraestructure-content').text).to eq("Docker, Kubernetes, Ansible, Puppet, Terraform")
         end
     end
     
@@ -122,10 +119,10 @@ RSpec.describe "Tech stack", type: :feature, js: true do
         end
     end
     
-    context "when reading Otros" do
-        it "title should read Otros" do 
+    context "when reading Others" do
+        it "title should read Others" do 
             visit '/'
-            expect(find('#others').text).to eq('Otros')
+            expect(find('#others').text).to eq('Others')
         end
         it "should have Godot" do 
             visit '/'
