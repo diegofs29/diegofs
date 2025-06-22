@@ -54,10 +54,29 @@ div.space {
   margin-right: auto;
 }
 
-h1.h1-subtle {
+h1.subtle-center {
   font-size: 2.4em;
+}
+
+h1.sutbtle {
+  font-size: 2.4em;
+  text-align: left;
 }
 
 p.center {
   text-align: center;
+}
+
+ul.space {
+  width: 65%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+li.dotless {
+  list-style-type: none;
+}
+
+a.article {
+  text-decoration: none;
 }
