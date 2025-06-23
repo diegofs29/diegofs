@@ -36,13 +36,14 @@
         <h3 id="others">Others</h3>
         <p id="others-content">Godot, Unreal, Arduino, REST</p>
     </div>
-    <div>
-        <ul class="space">
+    <div class="article-container">
+        <ul>
             {% for post in site.posts %}
-            <li class="dotless">
-                <h1 class="sutbtle">
+            <li class="dotless article-card">
+                <h3>
                     <a class="article" href="{{ post.url }}">{{ post.title }}</a>
-                </h1>
+                </h3>
+                {{ post.excerpt }}
             </li>
             {% endfor %}
         </ul>

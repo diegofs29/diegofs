@@ -1,3 +1,23 @@
+/* Variables */
+:root {
+  /* Fondos y superficies */
+  --white-primary: #FAFAFA; 
+  --white-secondary: #F1F1F1;
+
+  /* Colores de texto y elementos oscuros */
+  --grey-primary: #343434;
+  --grey-secondary: #777777;
+  --grey-light: #B0B0B0;
+
+  /* Acentos cálidos (tus naranjas) */
+  --orange-primary: #F39C12;
+  --orange-secondary: #E67E22;
+
+  /* Acento complementario (tu azul) */
+  --accent-primary: #1A5276;
+  --accent-secondary: #5BA8D1;
+}
+
 /* Fuente */
 body {
   font-family: "Roboto Mono", monospace;
@@ -12,16 +32,28 @@ h1 {
 
 /* Colores */
 body {
-  color: gray;
-  background-color: white
-}
-
-header {
-  background-color: peachpuff;
+  color: var(--grey-secondary);
+  background-color: var(--white-primary)
 }
 
 h1 {
-  color: black;
+  color: var(--grey-primary);
+}
+
+a:link {
+  color: var(--accent-secondary);
+}
+
+a:active {
+  color: var(--accent-secondary);
+}
+
+a:hover {
+  color: var(--accent-primary);
+}
+
+a:visited {
+  color: var(--accent-primary);
 }
 
 /* Estilo */
@@ -31,15 +63,12 @@ body {
 
 body > header {
   margin: 0;
-  padding: 2%;
-  border-bottom: 1px solid orangered;
+  padding-top: 2%;
 }
 
 body > footer {
   margin: 0;
-  padding: 4%;
-  background-color: azure;
-  border-top: 1px solid skyblue;
+  padding-bottom: 2%;
 }
 
 h1 {
@@ -75,6 +104,24 @@ ul.space {
 
 li.dotless {
   list-style-type: none;
+}
+
+/* Clases artículo */
+div.article-container {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+li.article-card {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background-color: var(--white-secondary);
+  overflow: hidden;
+  padding: 25px;
 }
 
 a.article {

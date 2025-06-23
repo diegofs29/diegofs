@@ -2,8 +2,10 @@
 layout: post
 author: Diego
 title: "La Mandarina: Un Cítrico Dulce y Aromático para Disfrutar"
+excerpt_separator: <!--more-->
 ---
 La mandarina, ese pequeño y vibrante cítrico de fácil pelado, es una de las frutas más queridas y accesibles, especialmente durante los meses de otoño e invierno. Con su distintivo aroma dulce y su sabor jugoso, es la compañera perfecta para un snack rápido, un postre ligero o un toque refrescante en diversas preparaciones culinarias.
+<!--more-->
 
 Originarias de Asia, las mandarinas pertenecen al género Citrus y son parientes cercanas de la naranja, aunque generalmente son más pequeñas, dulces y menos ácidas. Su piel fina y suelta hace que sean increíblemente fáciles de pelar, convirtiéndolas en una opción popular para niños y adultos por igual. Existen numerosas variedades, como la clementina, la satsuma o la híbrida tangelo, cada una con sus propias características distintivas en cuanto a sabor, tamaño y presencia de semillas.
 
