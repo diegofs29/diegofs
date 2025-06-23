@@ -87,7 +87,7 @@ h1.subtle-center {
   font-size: 2.4em;
 }
 
-h1.sutbtle {
+h1.subtle {
   font-size: 2.4em;
   text-align: left;
 }
@@ -134,4 +134,12 @@ li.article-card {
 
 a.article {
   text-decoration: none;
+}
+
+section.full-article {
+  width: 45%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
