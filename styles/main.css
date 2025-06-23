@@ -104,6 +104,8 @@ ul.space {
 
 li.dotless {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 /* Clases artículo */
@@ -113,6 +115,12 @@ div.article-container {
   margin-left: auto;
   margin-right: auto;
   width: 70%;
+}
+
+ul.article-container {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 li.article-card {
