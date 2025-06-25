@@ -20,6 +20,7 @@ require 'capybara/rspec'
 require 'rack/jekyll'
 require 'rack/test'
 require 'pry'
+require 'axe-rspec'
 
 RSpec.configure do |config|
   # rspec-expectations config goes here. You can use an alternate

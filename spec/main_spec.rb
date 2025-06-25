@@ -18,4 +18,11 @@ RSpec.describe "Main page", type: :feature, js: true do
       expect(find('#pitch-paragraph').text).to end_with 'world wide web!'
     end
   end
+
+  context "when accessing home page" do
+    it 'has no accessibility violations' do
+      visit "/"
+      expect(page).to be_axe_clean.according_to :wcag2a, :wcag2aa, :wcag2aaa, :wcag21a, :wcag21aa, :wcag22aa, :'best-practice'	
+    end
+  end
 end

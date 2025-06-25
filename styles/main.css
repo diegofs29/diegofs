@@ -5,17 +5,17 @@
   --white-secondary: #F1F1F1;
 
   /* Colores de texto y elementos oscuros */
-  --grey-primary: #343434;
-  --grey-secondary: #777777;
-  --grey-light: #B0B0B0;
+  --grey-primary: #282828;
+  --grey-secondary: #3b3b3b;
+  --grey-light: #4a4a4a;
 
   /* Acentos cálidos (tus naranjas) */
   --orange-primary: #F39C12;
   --orange-secondary: #E67E22;
 
   /* Acento complementario (tu azul) */
-  --accent-primary: #1A5276;
-  --accent-secondary: #5BA8D1;
+  --accent-primary: #00084d;
+  --accent-secondary: #004f9f;
 }
 
 /* Fuente */
