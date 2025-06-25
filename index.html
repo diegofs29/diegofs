@@ -44,11 +44,11 @@
 
     <!-- Projects -->
     <div class="space">
-        <h2>Projects</h2>
+        <h2 id="projects">Projects</h2>
         {% for project in site.data.projects %}
-        <h3>{{ project.name }}</h3>
-        <p>{{ project.language }}</p>
-        <p>
+        <h3 id="{{ project.id }}">{{ project.name }}</h3>
+        <p id="{{ project.id }}-lang">{{ project.language }}</p>
+        <p id="{{ project.id }}-desc">
             {{ project.description }}
             (<a href="{{ project.url }}" target="_blank">GitHub</a>)
         </p>

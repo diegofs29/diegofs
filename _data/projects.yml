@@ -1,20 +1,23 @@
-- name: Juego de Tanques
+- id: project-tanks
+  name: Tanks Game
   url: https://github.com/diegofs29/JuegoTanques
   language: C++
   description: > 
     Game developed in C++ using the SDL library. It is based on Wii Play's
-    'Tanks!' minigame, though in top down 2D instead of 3D.
-- name: Robotic Software Simulator
+    'Tanks!' minigame, though in top down 2D instead of 3D
+- id: project-robotic
+  name: Robotic Software Simulator
   url: https://github.com/diegofs29/simulator-robotic-software
   language: Python
   description: >
     A program that simulates the behavior of a linear actuator and a 
     mobile robot when programmed using Arduino. It was developed in 
-    Python using ANTLR, tkinter and Pillow.
-- name: Personal Webpage
+    Python using ANTLR, tkinter and Pillow
+- id: project-webpage
+  name: Personal Webpage
   url: https://github.com/diegofs29/diegofs
-  language: HTML, CSS, Ruby
+  language: Jekyll, Ruby, HTML, CSS
   description: >
     My personal webpage, the one that you are visiting right now. 
     Developed using Jekyll (and by extension tons of HTML, CSS, 
-    Ruby, YAML and Markdown).
+    Ruby, YAML and Markdown)
