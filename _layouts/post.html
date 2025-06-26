@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-<h1 class="subtle">{{ page.title }}</h1>
-<p>{{ page.date | date_to_string }} - {{ page.author }}</p>
+<section class="full-article">
+    <h1 class="subtle">{{ page.title }}</h1>
+    <p>{{ page.date | date_to_string }} - {{ page.author }}</p>
 
-{{ content }}
+    {{ content }}
+</section>
