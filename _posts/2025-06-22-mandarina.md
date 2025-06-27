@@ -1,4 +1,5 @@
 ---
+pid: post-item2
 layout: post
 author: Diego
 title: "La Mandarina: Un Cítrico Dulce y Aromático para Disfrutar"

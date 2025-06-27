@@ -30,6 +30,12 @@ h1 {
   font-size: 4em;
 }
 
+h2 {
+  text-decoration: underline;
+  text-decoration-color: var(--accent-secondary);
+  text-decoration-thickness: 3px;
+}
+
 /* Colores */
 body {
   color: var(--grey-secondary);
@@ -37,7 +43,7 @@ body {
 }
 
 h1 {
-  color: var(--grey-primary);
+  color: var(--accent-primary);
 }
 
 a:link {
@@ -56,9 +62,20 @@ a:visited {
   color: var(--accent-primary);
 }
 
+div.card {
+  background-color: var(--white-secondary);
+}
+
+p.language {
+  color: var(--accent-secondary);
+}
+
 /* Estilo */
 body {
-  margin: 0;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+  margin-left: 4vw;
+  margin-right: 4vw;
 }
 
 body > header {
@@ -67,13 +84,27 @@ body > header {
 }
 
 body > footer {
-  margin: 0;
+  margin-top: 2vw;
+  margin-bottom: 5vw;
   padding-bottom: 2%;
 }
 
 h1 {
   margin-top: 0;
   text-align: center;
+}
+
+h2 {
+  margin-top: 40px;
+}
+
+h2, h3 {
+  margin-bottom: 5px;
+}
+
+p {
+  margin-top: 5px;
+  margin-bottom: 0;
 }
 
 img {
@@ -84,11 +115,11 @@ img {
   margin-top: 4vw;
 }
 
+
 /* Clases */
-div.space {
-  width: 65%;
-  margin-left: auto;
-  margin-right: auto;
+div.container {
+  margin: auto;
+  max-width: 900px;
 }
 
 h1.subtle-center {
@@ -116,16 +147,24 @@ li.dotless {
   padding: 0;
 }
 
-/* Clases artículo */
-div.article-container {
-  margin-top: 50px;
-  margin-bottom: 50px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 70%;
+div.card-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 1vw 1vw;
 }
 
+div.card {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  padding: 25px;
+}
+
+/* Clases artículo */
 ul.article-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 1vw 1vw;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -150,4 +189,16 @@ section.full-article {
   margin-right: auto;
   margin-top: 15px;
   margin-bottom: 15px;
+}
+
+/* Media queries */
+@media only screen and (max-width: 1000px) {
+  #p-item1 {grid-area: 1 / span 3;}
+  #p-item2 {grid-area: 2 / span 3;}
+  #p-item3 {grid-area: 3 / span 3;}
+}
+
+@media only screen and (max-width: 1000px) {
+  #post-item1 {grid-area: 1 / span 2;}
+  #post-item2 {grid-area: 2 / span 2;}
 }

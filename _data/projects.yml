@@ -1,4 +1,5 @@
 - id: project-tanks
+  card-id: p-item1
   name: Tanks Game
   url: https://github.com/diegofs29/JuegoTanques
   language: C++
@@ -6,6 +7,7 @@
     Game developed in C++ using the SDL library. It is based on Wii Play's
     'Tanks!' minigame, though in top down 2D instead of 3D
 - id: project-robotic
+  card-id: p-item2
   name: Robotic Software Simulator
   url: https://github.com/diegofs29/simulator-robotic-software
   language: Python
@@ -14,6 +16,7 @@
     mobile robot when programmed using Arduino. It was developed in 
     Python using ANTLR, tkinter and Pillow
 - id: project-webpage
+  card-id: p-item3
   name: Personal Webpage
   url: https://github.com/diegofs29/diegofs
   language: Jekyll, Ruby, HTML, CSS
