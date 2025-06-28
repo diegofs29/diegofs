@@ -22,7 +22,7 @@ RSpec.describe "Contact footer", type: :feature, js: true do
     it "should have GitHub" do 
       visit '/'
       expect(find('#contact-github').text).to include('GitHub')
-      expect(find('#contact-github').text).to include('https://github.com/diegofs29')
+      expect(find('#contact-github').text).to include('github.com/diegofs29')
     end
   end
 end

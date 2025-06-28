@@ -2,28 +2,26 @@
 layout: default
 title: Diego Fernández Suárez
 ---
-<main role="main">
-  <!-- Tech Stack -->
-  <div>
-    <h2 id="tech-stack">Skills</h2>
-    {% for skill in site.data.skills %}
-      <h3 id="{{ skill.id }}">{{ skill.title }}</h3>
-      <p id="{{ skill.id }}-content">{{ skill.content }}</p>
-    {% endfor %}
-  </div>
+<!-- Tech Stack -->
+<div>
+  <h2 id="tech-stack">Skills</h2>
+  {% for skill in site.data.skills %}
+  <h3 id="{{ skill.id }}">{{ skill.title }}</h3>
+  <p id="{{ skill.id }}-content">{{ skill.content }}</p>
+  {% endfor %}
+</div>
 
-  <!-- Projects -->
-  <h2 id="projects">Projects</h2>
-  <div>
-    {% for project in site.data.projects %}
-    <div id="{{ project.card-id }}" class="card">
-      <h3 id="{{ project.id }}">{{ project.name }}</h3>
-      <p id="{{ project.id }}-lang" class="language">{{ project.language }}</p>
-      <p id="{{ project.id }}-desc">
-        {{ project.description }}
-        (<a href="{{ project.url }}" target="_blank">GitHub</a>)
-      </p>
-    </div>
-    {% endfor %}
+<!-- Projects -->
+<h2 id="projects">Projects</h2>
+<div>
+  {% for project in site.data.projects %}
+  <div id="{{ project.card-id }}" class="card">
+    <h3 id="{{ project.id }}">{{ project.name }}</h3>
+    <p id="{{ project.id }}-lang" class="language">{{ project.language }}</p>
+    <p id="{{ project.id }}-desc">
+      {{ project.description }}
+      (<a href="{{ project.url }}" target="_blank">GitHub</a>)
+    </p>
   </div>
-</main>
+  {% endfor %}
+</div>
