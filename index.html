@@ -16,8 +16,17 @@
         <h1 id="title">Diego Fernández Suárez</h1>
     </header>
 
-    <main role="main">
-        <div class="container">
+    <div class="container">
+        <!-- Navegación -->
+        <section role="navigation">
+            <ul class="navigation">
+                {% for menu in site.data.navigation %}
+                <li><a href="{{ menu.url }}" class="navigation">{{ menu.title }}</a></li>
+                {% endfor %}
+            </ul>
+        </section>
+
+        <main role="main">
             <!-- Description -->
             <div>
                 <h2 id="pitch-welcome">Welcome / Bienvenidos / Bienveníos</h2>
@@ -75,8 +84,8 @@
                 </li>
                 {% endfor %}
             </ul>
-        </div>
-    </main>
+        </main>
+    </div>
 
     <!-- Contact info -->
     <footer role="contentinfo">

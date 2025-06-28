@@ -70,6 +70,18 @@ p.language {
   color: var(--accent-secondary);
 }
 
+ul.navigation {
+  background-color: var(--white-secondary);
+}
+
+a.navigation:hover {
+  background-color: var(--orange-primary);
+}
+
+a.navigation:active {
+  background-color: var(--orange-secondary);
+}
+
 /* Estilo */
 body {
   margin-top: 1vw;
@@ -158,6 +170,18 @@ div.card {
   margin-bottom: 20px;
   border-radius: 10px;
   padding: 25px;
+}
+
+ul.navigation {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a.navigation {
+  display: block;
+  padding: 8px 16px;
+  text-decoration: none;
 }
 
 /* Clases artículo */
