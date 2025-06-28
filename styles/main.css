@@ -96,8 +96,8 @@ body > header {
 }
 
 body > footer {
-  margin-top: 2vw;
-  margin-bottom: 5vw;
+  margin-top: 4vw;
+  margin-bottom: 2vw;
   padding-bottom: 2%;
 }
 
@@ -145,6 +145,10 @@ h1.subtle-center {
 h1.subtle {
   font-size: 2.4em;
   text-align: left;
+}
+
+p.center {
+  text-align: center;
 }
 
 ul.space {
