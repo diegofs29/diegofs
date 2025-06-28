@@ -1,8 +1,11 @@
-- title: Home
+- id: nav-home
+  title: Home
   url: index.html
 
-- title: About
+- id: nav-about
+  title: About
   url: about.html
 
-- title: Blog
+- id: nav-blog
+  title: Blog
   url: blog.html
