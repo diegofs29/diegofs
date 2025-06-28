@@ -32,17 +32,4 @@ title: Diego Fernández Suárez
     </div>
     {% endfor %}
   </div>
-
-  <!-- Articles -->
-  <h2 id="articles-title">Articles</h2>
-  <ul id="articles-list" class="article-container">
-    {% for post in site.posts %}
-    <li id="{{ post.pid }}" class="dotless article-card">
-      <h3>
-        <a class="article" href="{{ post.url }}">{{ post.title }}</a>
-      </h3>
-      {{ post.excerpt }}
-    </li>
-    {% endfor %}
-  </ul>
 </main>

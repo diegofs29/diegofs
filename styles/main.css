@@ -133,11 +133,6 @@ div.container {
   max-width: 1000px;
 }
 
-div.main-container {
-  margin: auto;
-  max-width: 800px;
-}
-
 section.side-menu {
   margin-left: auto;
   margin-right: auto;
@@ -200,9 +195,6 @@ a.navigation {
 
 /* Clases artículo */
 ul.article-container {
-  display: grid;
-  grid-template-columns: auto auto;
-  gap: 1vw 1vw;
   list-style-type: none;
   margin: 0;
   padding: 0;
