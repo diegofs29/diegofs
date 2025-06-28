@@ -19,7 +19,7 @@
       <!-- Description -->
       <div>
         {% assign pitch = site.data.pitch.value %}
-        <h2 id="pitch-welcome">{{ pitch.title }}</h2>
+        <h2 id="pitch-welcome">{{ pitch.title | newline_to_br }}</h2>
         <p id="pitch-paragraph"> {{ pitch.text }}</p>
       </div>
       <ul class="navigation">

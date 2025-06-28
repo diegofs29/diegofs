@@ -9,7 +9,7 @@ RSpec.describe "Main page", type: :feature, js: true do
   context "when reading elevator pitch" do
     it "should have a welcome title" do
       visit '/'
-      expect(find('#pitch-welcome').text).to eq('Welcome / Bienvenidos / Bienveníos')
+      expect(find('#pitch-welcome').text).to eq("Welcome\nBienvenidos\nBienveníos")
     end
 
     it "should have a paragraph" do 
