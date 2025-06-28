@@ -1,0 +1,19 @@
+- id: lang
+  title: Languages
+  content: Kotlin, Swift, Python, Java, Bash, JavaScript, C++, C#
+
+- id: frameworks
+  title: Frameworks
+  content: Android, iOS, Spring
+
+- id: infraestructure
+  title: Infraestructure
+  content: Docker, Kubernetes, Ansible, Puppet, Terraform
+
+- id: cloud
+  title: Cloud
+  content: AWS, GCP, Azure
+
+- id: others
+  title: Others
+  content: Godot, Unreal, Arduino, REST

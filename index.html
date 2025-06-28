@@ -6,21 +6,15 @@ title: Diego Fernández Suárez
   <!-- Tech Stack -->
   <div>
     <h2 id="tech-stack">Skills</h2>
-    <h3 id="lang">Languages</h3>
-    <p id="lang-content">Kotlin, Swift, Python, Java, Bash, JavaScript, C++, C#</p>
-    <h3 id="frameworks">Frameworks</h3>
-    <p id="frameworks-content">Android, iOS, Spring</p>
-    <h3 id="infraestructure">Infraestructure</h3>
-    <p id="infraestructure-content">Docker, Kubernetes, Ansible, Puppet, Terraform</p>
-    <h3 id="cloud">Cloud</h3>
-    <p id="cloud-content">AWS, GCP, Azure</p>
-    <h3 id="others">Others</h3>
-    <p id="others-content">Godot, Unreal, Arduino, REST</p>
+    {% for skill in site.data.skills %}
+      <h3 id="{{ skill.id }}">{{ skill.title }}</h3>
+      <p id="{{ skill.id }}-content">{{ skill.content }}</p>
+    {% endfor %}
   </div>
 
   <!-- Projects -->
   <h2 id="projects">Projects</h2>
-  <div class="card-container">
+  <div>
     {% for project in site.data.projects %}
     <div id="{{ project.card-id }}" class="card">
       <h3 id="{{ project.id }}">{{ project.name }}</h3>
