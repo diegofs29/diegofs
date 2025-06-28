@@ -1,4 +1,5 @@
 ---
+layout: default
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -11,21 +12,7 @@
 </head>
 
 <body>
-    <!-- Título -->
-    <header role="banner">
-        <h1 id="title">Diego Fernández Suárez</h1>
-    </header>
-
     <div class="container">
-        <!-- Navegación -->
-        <section role="navigation">
-            <ul class="navigation">
-                {% for menu in site.data.navigation %}
-                <li><a href="{{ menu.url }}" class="navigation">{{ menu.title }}</a></li>
-                {% endfor %}
-            </ul>
-        </section>
-
         <main role="main">
             <!-- Description -->
             <div>
@@ -86,18 +73,6 @@
             </ul>
         </main>
     </div>
-
-    <!-- Contact info -->
-    <footer role="contentinfo">
-        <h1 id="contact-title" class="subtle-center">How to reach out to me</h1>
-        <p id="contact-email" class="center">Email: <a
-                href="mailto:diegofdezsrz12@gmail.com">diegofdezsrz12@gmail.com</a></p>
-        <p id="contact-linkedin" class="center">LinkedIn: <a
-                href="https://www.linkedin.com/in/diego-fernandez-suarez">www.linkedin.com/in/diego-fernandez-suarez</a>
-        </p>
-        <p id="contact-github" class="center">GitHub: <a
-                href="https://github.com/diegofs29">https://github.com/diegofs29</a></p>
-    </footer>
 </body>
 
 </html>
