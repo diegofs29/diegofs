@@ -13,28 +13,38 @@
     <h1 id="title">Diego Fernández Suárez</h1>
   </header>
 
-  <!-- Navegación -->
-  <section role="navigation">
-    <ul class="navigation">
-      {% for menu in site.data.navigation %}
-      <li>
-        <a href="{{ menu.url }}" class="navigation">{{ menu.title }}</a>
-      </li>
-      {% endfor %}
-    </ul>
-  </section>
+  <div class="container">
+    <!-- Navegación -->
+    <section role="navigation">
+      <!-- Description -->
+      <div>
+        {% assign pitch = site.data.pitch.value %}
+        <h2 id="pitch-welcome">{{ pitch.title }}</h2>
+        <p id="pitch-paragraph"> {{ pitch.text }}</p>
+      </div>
+      <ul class="navigation">
+        {% for menu in site.data.navigation %}
+        <li>
+          <a href="{{ menu.url }}" class="navigation">{{ menu.title }}</a>
+        </li>
+        {% endfor %}
+      </ul>
 
-  <!-- Contenido -->
-  {{ content }}
+      <h2 id="contact-title" class="subtle-center">How to reach out to me</h1>
+      {% for item in site.data.contact %}
+      <p id="{{ item.id }}">
+        {{ item.title }}: <a href="{{ item.url }}">{{ item.text }}</a>
+      </p>
+      {% endfor %}
+    </section>
+
+    <!-- Contenido -->
+    <div class="main-container">{{ content }}</div>
+  </div>
 
   <!-- Contact info -->
   <footer role="contentinfo">
-    <h1 id="contact-title" class="subtle-center">How to reach out to me</h1>
-    {% for item in site.data.contact %}
-      <p id="{{ item.id }}" class="center">
-        {{ item.title }}: <a href="{{ item.url }}">{{ item.text }}</a>
-      </p>
-    {% endfor %}
+
   </footer>
 </body>
 

@@ -106,11 +106,7 @@ h1 {
   text-align: center;
 }
 
-h2 {
-  margin-top: 40px;
-}
-
-h2, h3 {
+h3 {
   margin-bottom: 5px;
 }
 
@@ -131,7 +127,15 @@ img {
 /* Clases */
 div.container {
   margin: auto;
-  max-width: 900px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2vw 2vw;
+  max-width: 1000px;
+}
+
+div.main-container {
+  margin: auto;
+  max-width: 800px;
 }
 
 h1.subtle-center {
@@ -141,10 +145,6 @@ h1.subtle-center {
 h1.subtle {
   font-size: 2.4em;
   text-align: left;
-}
-
-p.center {
-  text-align: center;
 }
 
 ul.space {
