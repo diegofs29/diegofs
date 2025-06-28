@@ -1,0 +1,14 @@
+- id: contact-email
+  title: Email
+  url: mailto:diegofdezsrz12@gmail.com
+  text: diegofdezsrz12@gmail.com
+
+- id: contact-linkedin
+  title: LinkedIn
+  url: https://www.linkedin.com/in/diego-fernandez-suarez
+  text: www.linkedin.com/in/diego-fernandez-suarez
+
+- id: contact-github
+  title: GitHub
+  url: https://github.com/diegofs29
+  text: github.com/diegofs29

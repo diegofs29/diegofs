@@ -17,24 +17,24 @@
   <section role="navigation">
     <ul class="navigation">
       {% for menu in site.data.navigation %}
-      <li><a href="{{ menu.url }}" class="navigation">{{ menu.title }}</a></li>
+      <li>
+        <a href="{{ menu.url }}" class="navigation">{{ menu.title }}</a>
+      </li>
       {% endfor %}
     </ul>
   </section>
 
   <!-- Contenido -->
   {{ content }}
-  
+
   <!-- Contact info -->
   <footer role="contentinfo">
     <h1 id="contact-title" class="subtle-center">How to reach out to me</h1>
-    <p id="contact-email" class="center">Email: <a href="mailto:diegofdezsrz12@gmail.com">diegofdezsrz12@gmail.com</a>
-    </p>
-    <p id="contact-linkedin" class="center">LinkedIn: <a
-        href="https://www.linkedin.com/in/diego-fernandez-suarez">www.linkedin.com/in/diego-fernandez-suarez</a>
-    </p>
-    <p id="contact-github" class="center">GitHub: <a
-        href="https://github.com/diegofs29">https://github.com/diegofs29</a></p>
+    {% for item in site.data.contact %}
+      <p id="{{ item.id }}" class="center">
+        {{ item.title }}: <a href="{{ item.url }}">{{ item.text }}</a>
+      </p>
+    {% endfor %}
   </footer>
 </body>
 
