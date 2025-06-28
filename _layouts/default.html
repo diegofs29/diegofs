@@ -15,7 +15,7 @@
 
   <div class="container">
     <!-- Navegación -->
-    <section role="navigation">
+    <section id="item1" role="navigation" class="side-menu">
       <!-- Description -->
       <div>
         {% assign pitch = site.data.pitch.value %}
@@ -30,16 +30,18 @@
         {% endfor %}
       </ul>
 
-      <h2 id="contact-title" class="subtle-center">How to reach out to me</h1>
-      {% for item in site.data.contact %}
-      <p id="{{ item.id }}">
-        {{ item.title }}: <a href="{{ item.url }}">{{ item.text }}</a>
-      </p>
-      {% endfor %}
+      <div>
+        <h2 id="contact-title" class="subtle-center">How to reach out to me</h1>
+          {% for item in site.data.contact %}
+          <p id="{{ item.id }}">
+            {{ item.title }}: <a href="{{ item.url }}">{{ item.text }}</a>
+          </p>
+          {% endfor %}
+      </div>
     </section>
 
     <!-- Contenido -->
-    <div class="main-container">{{ content }}</div>
+    <div id="item2" class="main-container">{{ content }}</div>
   </div>
 
   <!-- Contact info -->
