@@ -78,6 +78,7 @@ RSpec.configure do |config|
   # so our tests are always running against the latest version
   # of our jekyll site.
   Capybara.app = Rack::Jekyll.new(force_build: true)
+  sleep 0.1 while Capybara.app.compiling?
   Capybara.server = :webrick
 
   # The settings below are suggested to provide a good initial experience
