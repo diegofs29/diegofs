@@ -42,7 +42,7 @@ jobs:
       - name: Install Bundler executables
         run: bundle install
       - name: Test with RSpec, Capybara and Selenium
-        run: rspec spec
+        run: bundle exec rspec spec
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
