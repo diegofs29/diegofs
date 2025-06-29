@@ -3,7 +3,7 @@ layout: default
 title: Diego Fernández Suárez
 ---
 <!-- Tech Stack -->
-<div>
+<div class="skills">
   <h2 id="tech-stack">Skills</h2>
   {% for skill in site.data.skills %}
   <h3 id="{{ skill.id }}">{{ skill.title }}</h3>
@@ -12,8 +12,8 @@ title: Diego Fernández Suárez
 </div>
 
 <!-- Projects -->
-<h2 id="projects">Projects</h2>
-<div>
+<div class="projects">
+  <h2 id="projects">Projects</h2>
   {% for project in site.data.projects %}
   <div id="{{ project.card-id }}" class="card">
     <h3 id="{{ project.id }}">{{ project.name }}</h3>
