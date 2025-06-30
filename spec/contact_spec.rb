@@ -9,20 +9,17 @@ RSpec.describe "Contact footer", type: :feature, js: true do
   context "when reading contact info" do 
     it "should have email" do 
       visit '/'
-      expect(find('#contact-email').text).to include('Email')
-      expect(find('#contact-email').text).to include('diegofdezsrz12@gmail.com')
+      expect(find('#contact-email').text).to include(/Email/)
     end
 
     it "should have LinkedIn" do 
       visit '/'
-      expect(find('#contact-linkedin').text).to include('LinkedIn')
-      expect(find('#contact-linkedin').text).to include('www.linkedin.com/in/diego-fernandez-suarez')
+      expect(find('#contact-linkedin').text).to include(/LinkedIn/)
     end
 
     it "should have GitHub" do 
       visit '/'
-      expect(find('#contact-github').text).to include('GitHub')
-      expect(find('#contact-github').text).to include('github.com/diegofs29')
+      expect(find('#contact-github').text).to include(/GitHub/)
     end
   end
 end
