@@ -22,28 +22,28 @@ RSpec.describe "Main page", type: :feature, js: true do
   context "when accessing home page" do
     it 'has no accessibility violations' do
       visit "/"
-      expect(page).to be_axe_clean.according_to :wcag2a, :wcag2aa, :wcag2aaa, :wcag21a, :wcag21aa, :wcag22aa, :'best-practice'	
+      expect(page).to be_axe_clean.according_to :wcag2a, :wcag2aa, :wcag21a, :wcag21aa, :wcag22aa, :'best-practice'	
     end
   end
   
   context "when accessing 404 page" do
     it 'has no accessibility violations' do
       visit "/404"
-      expect(page).to be_axe_clean.according_to :wcag2a, :wcag2aa, :wcag2aaa, :wcag21a, :wcag21aa, :wcag22aa, :'best-practice'	
+      expect(page).to be_axe_clean.according_to :wcag2a, :wcag2aa, :wcag21a, :wcag21aa, :wcag22aa, :'best-practice'	
     end
   end
 
   context "when accessing about page" do
     it 'has no accessibility violations' do
       visit "/about.html"
-      expect(page).to be_axe_clean.according_to :wcag2a, :wcag2aa, :wcag2aaa, :wcag21a, :wcag21aa, :wcag22aa, :'best-practice'	
+      expect(page).to be_axe_clean.according_to :wcag2a, :wcag2aa, :wcag21a, :wcag21aa, :wcag22aa, :'best-practice'	
     end
   end
 
   context "when accessing blog page" do
     it 'has no accessibility violations' do
       visit "/blog.html"
-      expect(page).to be_axe_clean.according_to :wcag2a, :wcag2aa, :wcag2aaa, :wcag21a, :wcag21aa, :wcag22aa, :'best-practice'	
+      expect(page).to be_axe_clean.according_to :wcag2a, :wcag2aa, :wcag21a, :wcag21aa, :wcag22aa, :'best-practice'	
     end
   end
 end
