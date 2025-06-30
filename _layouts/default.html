@@ -28,7 +28,7 @@
       <ul class="navigation">
         {% for menu in site.data.navigation %}
         <li>
-          <a id="{{ menu.id }}" href="{{ menu.url }}" class="navigation">{{ menu.title }}</a>
+          <a id="{{ menu.id }}" href="{{ menu.url | absolute_url }}" class="navigation">{{ menu.title }}</a>
         </li>
         {% endfor %}
       </ul>
