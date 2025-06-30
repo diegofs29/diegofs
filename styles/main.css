@@ -323,6 +323,7 @@ div.card {
 }
 
 ul.navigation {
+  border-radius: 10px;
   list-style-type: none;
   margin-left: auto;
   margin-right: auto;
@@ -333,6 +334,7 @@ ul.navigation {
 }
 
 a.navigation {
+  border-radius: 10px;
   display: block;
   padding: 1vw 1vw;
   text-decoration: none;
