@@ -397,6 +397,11 @@ p.article {
     margin-bottom: 8vw;
   }
 
+  p.contact {
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+  }
+
   div.skills {
     margin-bottom: 8vw;
   }
@@ -439,7 +444,12 @@ p.article {
   }
 
   div.contact {
-    margin-bottom: 5vw;
+    margin-bottom: 6vw;
+  }
+
+  p.contact {
+    margin-top: 4vw;
+    margin-bottom: 4vw;
   }
 
   main.container {
@@ -488,6 +498,11 @@ p.article {
   }
 
   div.contact {
+    margin-bottom: 5vw;
+  }
+
+  p.contact {
+    margin-top: 3vw;
     margin-bottom: 3vw;
   }
 
@@ -537,6 +552,11 @@ p.article {
   }
 
   div.contact {
+    margin-bottom: 4vw;
+  }
+
+  p.contact {
+    margin-top: 2vw;
     margin-bottom: 2vw;
   }
 
@@ -592,6 +612,11 @@ p.article {
 
   div.contact {
     margin-bottom: 0;
+  }
+
+  p.contact {
+    margin-top: 1vw;
+    margin-bottom: 1vw;
   }
 
   main.container {

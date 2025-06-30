@@ -29,14 +29,14 @@
       </div>
 
       <div class="contact">
-        <h3 id="contact-title">How to reach out to me</h1>
-          {% for item in site.data.contact %}
-          <p id="{{ item.id }}">
-            <a href="{{ item.url }}">
-              <i class="{{ item.icon }}"></i> {{ item.title }}
-            </a>
-          </p>
-          {% endfor %}
+        <h3 id="contact-title">How to reach out to me</h3>
+        {% for item in site.data.contact %}
+        <p id="{{ item.id }}" class="contact">
+          <a href="{{ item.url }}">
+            <i class="{{ item.icon }}"></i> {{ item.title }}
+          </a>
+        </p>
+        {% endfor %}
       </div>
 
       <ul class="navigation">
