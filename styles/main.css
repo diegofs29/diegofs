@@ -267,6 +267,10 @@ img {
   margin-top: 4vw;
 }
 
+a {
+  text-decoration: none;
+  vertical-align: middle;
+}
 
 /* Clases */
 main.container {
