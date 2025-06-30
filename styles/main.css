@@ -50,7 +50,7 @@
 
     /* Acentos cálidos */
     --orange-primary: #C04000;
-    --orange-secondary: #933a0d;
+    --orange-secondary: #8d3002;
 
     /* Acento complementario */
     --accent-primary: #00084d;
@@ -107,8 +107,8 @@
   --dark-orange-secondary: #E67E22;
 
   /* Acento complementario */
-  --dark-accent-primary: #37b6ff;
-  --dark-accent-secondary: #00a2ff;
+  --dark-accent-primary: #90d6ff;
+  --dark-accent-secondary: #66c7ff;
 }
 
 :root.light {
