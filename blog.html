@@ -9,7 +9,7 @@ title: Blog
     {% for post in site.posts %}
     <li id="{{ post.pid }}" class="dotless article-card">
       <h3>
-        <a class="article" href="{{ post.url }}">{{ post.title }}</a>
+        <a id="{{ post.pid }}-url" class="article" href="{{ post.url }}">{{ post.title }}</a>
       </h3>
       {{ post.excerpt }}
     </li>
